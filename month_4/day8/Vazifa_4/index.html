@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <header class="container my-4 d-flex justify-content-between">
+      <h1>Смартфоны</h1>
+      <!-- <button class="btn bg-primary text-light">Product add</button> -->
+      <button
+        type="button"
+        class="btn btn-outline-danger hover"
+        id="addProduct"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Product add
+      </button>
+
+      <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Launch demo modal
+          </button> -->
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Add product
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form id="form">
+                <label for="id">Product id:</label>
+                <input type="number" class="form-control" id="id" required />
+                <label for="name"> Phone name: </label>
+                <input type="text" class="form-control" id="name" required />
+                <label for="link"> Phones images url </label>
+                <input type="text" id="link" class="form-control" required />
+                <label for="phonePrice">Phone price:</label>
+                <input
+                  type="number"
+                  id="phonePrice"
+                  class="form-control"
+                  required
+                />
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                id="saved"
+                form="form"
+              >
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container main-container"></div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal2"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Edit product
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="form2">
+              <label for="editName"> Phone name: </label>
+              <input
+                type="text"
+                class="form-control editName"
+                id="editName"
+                required
+              />
+              <label for="editPhonePrice">Phone price:</label>
+              <input
+                type="number"
+                id="editPhonePrice"
+                class="form-control editPhonePrice"
+                required
+              />
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              id="editSaved"
+              form="form2"
+            >
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

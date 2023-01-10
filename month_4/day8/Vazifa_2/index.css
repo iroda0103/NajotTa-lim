@@ -1,0 +1,19 @@
+.box{
+    background: black;
+    padding: 20px 60px;
+    border-radius: 45px;
+}
+.main{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.time{
+font-size: 65px;
+
+    color: rgb(216, 224, 139);
+}
+.header{
+    text-align: center;
+}
