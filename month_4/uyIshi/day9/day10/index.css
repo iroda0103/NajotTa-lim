@@ -1,0 +1,45 @@
+:root {
+  --color: #000;
+  --backgroud-color: #fff;
+}
+li {
+  list-style: none;
+}
+body {
+  color: var(--color);
+  background-color: var(--backgroud-color);
+}
+.albums {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+}
+.albumTitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+}
+.header {
+  box-shadow: 0px 2px 4px rgb(0 0 0 / 6%);
+}
+.card {
+  padding: 0;
+}
+.card {
+  color: var(--color);
+  background-color: var(--backgroud-color);
+}
+.darkmode {
+  --color: #fff;
+  --backgroud-color: #000;
+}
+button {
+  border: 0;
+}
+strong {
+  font-size: 18px;
+}
+span {
+  font-weight: 600;
+  font-size: 17px;
+}

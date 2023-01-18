@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+  />
+  <link rel="stylesheet" href="./index.css" />
+  <body>
+    <header class="header">
+      <div class="container d-flex justify-content-between">
+        <h1 class="albums p-3">Album photos</h1>
+        <div class="p-4">
+          <i class="bi bi-brightness-high-fill imageDarkMode"></i>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">UserId</th>
+            <th scope="col">Title</th>
+            <th scope="col">Harakatlar</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+        <tbody class="tbody">
+          <template id="albumsTemplate">
+            <tr>
+              <th scope="row" class="tdId">1</th>
+              <td class="tdUserId">Mark</td>
+              <td class="tdTitle">Otto</td>
+              <td>
+                <span class="badge bg-primary eyes"
+                  ><i class="bi bi-eye"></i
+                ></span>
+                <!-- Badge trigger modal -->
+                <span
+                  class="badge bg-info edit"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <i class="bi bi-pencil-square"></i
+                ></span>
+                <span class="badge bg-danger remove"
+                  ><i class="bi bi-trash3"></i
+                ></span>
+              </td>
+            </tr>
+          </template>
+        </tbody>
+      </table>
+    </main>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="" id="editForm">
+              <label for="inputUserId">UserId : </label>
+              <input type="number" class="form-control" id="inputUserId" />
+              <label for="inputTitle">Title </label>
+              <input type="text" class="form-control" id="inputTitle" />
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="submit"
+              class="btn btn-primary editSaved"
+              form="editForm"
+            >
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./global.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

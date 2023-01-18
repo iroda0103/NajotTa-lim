@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container d-flex justify-content-between">
+        <h1 class="albums p-3">User</h1>
+        <div class="p-4">
+          <i class="bi bi-brightness-high-fill imageDarkMode"></i>
+        </div>
+      </div>
+    </header>
+
+    <h2 class="container albumTitle my-5 usersNew"></h2>
+    <div class="container">
+      <ul class="d-flex justify-content-around mt-5">
+        <li>
+          <ul class="users-news">
+            <li><strong>Name : </strong><span class="name"></span></li>
+            <li><strong>Username : </strong><span class="userName"></span></li>
+            <li><strong>Email : </strong><span class="email"></span></li>
+            <li><strong>Address : </strong><span class="address"> </span></li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li>
+              <strong>Phone</strong>
+              <span class="phone"></span>
+            </li>
+            <li><strong>Website : </strong><span class="website"></span></li>
+            <li><strong>Company : </strong><span class="company"></span></li>
+            <li></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <script src="./global.js"></script>
+    <script src="./users.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" id="login-form">
+      <input type="number" name="phone" id="phone" />
+      <input type="password" name="password" id="password" />
+      <button type="submit" id="submit">Submit</button>
+    </form>
+
+    <script>
+      let loginForm = document.getElementById("login-form");
+      loginForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        let name = document.getElementById("name").value;
+        let phone = document.getElementById("phone").value;
+        let password = document.getElementById("password").value;
+
+        fetch("http://192.168.7.147:3000/api/auth", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ password, phone }),
+        }).then;
+        console.log(name, password, phone);
+      });
+    </script>
+  </body>
+</html>
