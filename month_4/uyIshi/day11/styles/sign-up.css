@@ -1,0 +1,37 @@
+.register-main {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.register-form {
+  background-color: rgb(31, 30, 30);
+  max-width: 330px;
+  width: 100%;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+}
+.register-input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.register-input:hover {
+  box-shadow: 0 0 4px rgb(98, 197, 255);
+  border: 1px solid rgb(101, 223, 253);
+}
+.register-input:focus {
+  box-shadow: 0 0 2px rgb(98, 197, 255);
+  border: 1px solid rgb(101, 223, 253);
+}
+.register-form-div {
+  display: flex;
+  justify-content: center;
+}
+.register-btn {
+  margin-top: 10px;
+}
